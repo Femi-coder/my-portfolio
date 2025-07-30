@@ -6,9 +6,11 @@ export default function ContactPage() {
     <>
       <Navbar />
       <TransitionWrapper>
-        <main className="min-h-screen bg-gray-900 text-white pl-48 pt-20 px-8">
+        <main className="min-h-screen bg-gray-900 text-white pl-40 pt-25 px-10">
           <div className="max-w-xl mx-auto">
-            <h1 className="text-3xl font-bold mb-6 text-center">Contact Me</h1>
+            <h1 className="text-5xl font-extrabold mb-10 text-blue-400 tracking-tight">
+                Contact Me
+              </h1>
             <form
               action="https://formspree.io/f/mgvzzowd"
               method="POST"
@@ -43,7 +45,7 @@ export default function ContactPage() {
               </div>
               <button
                 type="submit"
-                className="bg-indigo-600 hover:bg-indigo-500 text-white font-medium py-2 px-6 rounded transition"
+                className="bg-blue-600 hover:bg-blue-500 text-white font-medium py-2 px-6 rounded transition"
               >
                 Send
               </button>

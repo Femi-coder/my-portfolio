@@ -27,7 +27,7 @@ export default function Navbar() {
         className={`fixed top-0 left-0 h-full w-56 bg-gradient-to-b from-blue-800 to-blue-900 text-white flex flex-col items-center py-10 shadow-2xl transform transition-transform duration-300 z-40
         ${open ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0`}
       >
-        <h1 className="text-3xl font-extrabold mb-12 tracking-tight">Femi.dev</h1>
+        <h1 className="text-3xl font-extrabold mb-12 tracking-tight">Portfolio</h1>
         <ul className="space-y-6 w-full px-6">
           {navItems.map((item) => (
             <li key={item.path}>

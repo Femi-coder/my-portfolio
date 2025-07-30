@@ -20,11 +20,11 @@ export default function Home() {
             <Image
               src="/femi.png"
               alt="Femi Onasanya"
-              width={400}
+              width={450}
               height={180}
-              className="rounded-full shadow-lg mb-6 border-4 border-indigo-500"
+              className="rounded-full shadow-lg mb-6 border-4 border-blue-500"
             />
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-indigo-400">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-blue-400">
               Femi Onasanya
             </h1>
             <p className="text-xl text-gray-300 mb-6 max-w-xl">
@@ -36,7 +36,7 @@ export default function Home() {
 
             {/* Call-to-Action */}
             <Link href="/projects">
-              <button className="bg-indigo-600 hover:bg-indigo-500 text-white py-2 px-6 rounded shadow transition duration-300 mb-4">
+              <button className="bg-blue-600 hover:bg-blue-500 text-white py-2 px-6 rounded shadow transition duration-300 mb-4">
                 View My Projects
               </button>
             </Link>
