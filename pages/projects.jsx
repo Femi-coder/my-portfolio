@@ -12,9 +12,18 @@ const projects = [
     title: 'Video Gallery App - Personal Project',
     desc: `A personal video storage and sharing app that allows users to upload, watch, and manage their videos in a clean gallery view. Features include user authentication, secure video uploads, real-time previews, and a private dashboard. Videos are stored in the cloud and accessible only after login.`,
     tech: ['Next.js', 'Firebase Storage', 'Tailwind CSS', 'NextAuth.js'],
-    liveLink: 'https://your-video-gallery.vercel.app', // Replace with your actual deployment link
+    liveLink: 'https://your-video-gallery.vercel.app', 
+
   },
+  {
+  title: 'Financial Planner',
+  desc: 'A personal finance tracker that lets users manage their income and expenses with login support and user-specific transaction history.',
+  tech: ['Next.js', 'Node.js', 'MongoDB', 'Tailwind CSS', 'bcrypt'],
+  liveLink: 'https://finance-tracker-one-olive.vercel.app/'
+  }
+
 ];
+
 
 export default function Projects() {
   return (
