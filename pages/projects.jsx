@@ -27,7 +27,8 @@ export default function Projects() {
     <>
       <Navbar />
       <TransitionWrapper>
-        <main className="min-h-screen bg-gray-900 text-white pt-24 px-4 sm:px-8 md:pl-48">
+       <main className="min-h-screen overflow-auto bg-gray-900 text-gray-300 pt-24 px-4 sm:px-8 md:pl-48">
+
           <h1 className="text-3xl sm:text-4xl font-bold mb-8 text-blue-400 text-center sm:text-left">
             Projects
           </h1>

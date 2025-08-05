@@ -40,6 +40,6 @@ body::-webkit-scrollbar {
 
 /* Prevent scrollbar flash on page change */
 html {
-  overflow-y: hidden;
+  overflow-y: auto;
   height: 100%;
 }

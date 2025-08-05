@@ -7,7 +7,7 @@ export default function About() {
     <>
       <Navbar />
       <TransitionWrapper>
-        <main className="min-h-screen bg-gray-900 text-gray-300 pt-24 px-4 sm:px-8 md:pl-48">
+        <main className="min-h-screen overflow-auto bg-gray-900 text-gray-300 pt-24 px-4 sm:px-8 md:pl-48">
           <section className="max-w-4xl mx-auto space-y-10">
 
             {/* Page Title */}
