@@ -4,13 +4,26 @@ import Router from 'next/router';
 import NProgress from 'nprogress';
 import 'nprogress/nprogress.css';
 
+// Configure NProgress
+NProgress.configure({
+  showSpinner: false,
+  speed: 500,         // animation speed of the bar
+  trickleSpeed: 200,  // how frequently the bar increases
+  minimum: 0.08       // minimum bar size
+});
 
-NProgress.configure({ showSpinner: false, speed: 400 });
+// Start NProgress on route change start
+Router.events.on('routeChangeStart', () => {
+  NProgress.start();
+});
 
-Router.events.on('routeChangeStart', () => NProgress.start());
-Router.events.on('routeChangeComplete', () => NProgress.done());
-Router.events.on('routeChangeError', () => NProgress.done());
-
+// Delay the done() to make it feel smoother
+Router.events.on('routeChangeComplete', () => {
+  setTimeout(() => NProgress.done(), 300);
+});
+Router.events.on('routeChangeError', () => {
+  setTimeout(() => NProgress.done(), 300);
+});
 
 export default function MyApp({ Component, pageProps }) {
   return (
