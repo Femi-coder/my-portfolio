@@ -39,8 +39,8 @@ export default function About() {
               </h2>
               <ul className="list-disc list-inside space-y-1 pl-2 text-base sm:text-lg">
                 <li><span className="font-semibold">Frontend:</span> React, Next.js, Tailwind CSS</li>
-                <li><span className="font-semibold">Backend:</span> Node.js, Express.js</li>
-                <li><span className="font-semibold">Tools:</span> Git, GitHub, Vercel, Figma</li>
+                <li><span className="font-semibold">Backend:</span>  Node.js, Express.js, REST APIs</li>
+                <li><span className="font-semibold">Tools:</span> Git, GitHub, Vercel</li>
                 <li><span className="font-semibold">Database:</span> MongoDB</li>
                 <li><span className="font-semibold">Deployment:</span> Vercel</li>
               </ul>
