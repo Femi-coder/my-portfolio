@@ -72,7 +72,7 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.6 }}
               className="flex flex-col sm:flex-row gap-4 mt-4"
             >
-              <Link href="#projects">
+              <Link href="projects">
                 <button className="bg-blue-600 hover:bg-blue-500 text-white py-2 px-5 sm:py-3 sm:px-8 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 text-sm sm:text-base md:text-lg">
                   View My Projects
                 </button>

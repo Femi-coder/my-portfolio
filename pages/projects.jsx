@@ -3,7 +3,7 @@ import TransitionWrapper from '../components/TransitionWrapper';
 
 const projects = [
   {
-    title: 'Eco-Wheels Dublin - Group Project',
+    title: 'Eco-Wheels Dublin',
     desc: `A full-stack electric vehicle rental platform designed for urban mobility in Dublin. It features real-time charging station data using MapTiler and Overpass API, secure user authentication, role-based access (admin, regular, student-share users), and a MongoDB backend for managing rentals, returns, and user history. The frontend is built with Next.js and Tailwind CSS, offering a responsive and user-friendly interface.`,
     tech: ['Next.js', 'MongoDB', 'Tailwind CSS', 'MapTiler', 'Overpass API'],
     liveLink: 'https://major-group-project-mu.vercel.app/majorgroupproject',
