@@ -8,7 +8,7 @@ export default function ContactPage() {
       <TransitionWrapper>
         <main className="min-h-screen bg-gray-900 text-white pt-24 px-4 sm:px-8 md:pl-48">
           <div className="max-w-xl mx-auto">
-            <h1 className="text-3xl sm:text-5xl font-extrabold mb-10 text-blue-400 tracking-tight text-center sm:text-left">
+            <h1 className="text-3xl sm:text-4xl font-bold mb-8 text-blue-400 text-center sm:text-left">
               Contact Me
             </h1>
 

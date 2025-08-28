@@ -19,7 +19,7 @@ export default function About() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6 }}
               >
-                <h1 className="text-3xl sm:text-4xl font-bold mb-4 text-blue-400 tracking-tight">
+                <h1 className="text-3xl sm:text-4xl font-bold mb-8 text-blue-400 text-center sm:text-left">
                   About Me
                 </h1>
                 <p className="text-base sm:text-lg leading-relaxed">
