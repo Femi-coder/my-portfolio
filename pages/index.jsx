@@ -22,7 +22,7 @@ export default function Home() {
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="w-32 sm:w-48 md:w-64 lg:w-80 mb-6"
+              className="w-40 sm:w-56 md:w-72 lg:w-80 mb-6 max-w-full"
             >
               <Image
                 src="/femi.png"
@@ -30,7 +30,7 @@ export default function Home() {
                 width={500}
                 height={500}
                 priority
-                className="rounded-full shadow-2xl border-4 border-blue-500 w-full h-auto hover:scale-105 transition-transform duration-300"
+                className="rounded-full shadow-2xl border-4 border-blue-500 w-full h-auto hover:scale-105 transition-transform duration-300 object cover"
               />
             </motion.div>
 
