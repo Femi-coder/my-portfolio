@@ -21,16 +21,16 @@ export default function Home() {
             <motion.div
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
               className="w-40 sm:w-56 md:w-72 lg:w-80 mb-6 max-w-full"
             >
               <Image
                 src="/femi.png"
                 alt="Femi Onasanya"
-                width={500}
-                height={500}
+                width={600}
+                height={600}
                 priority
-                className="rounded-full shadow-2xl border-4 border-blue-500 w-full h-auto hover:scale-105 transition-transform duration-300 object cover"
+                className="rounded-full shadow-2xl border-4 border-blue-500 w-full h-auto hover:scale-115 transition-transform duration-300 object cover"
               />
             </motion.div>
 
