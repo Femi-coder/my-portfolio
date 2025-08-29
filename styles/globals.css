@@ -22,38 +22,19 @@
   --font-mono: var(--font-mono);
 }
 
-/* Apply global styles */
-body {
+/* ---------- Base Styles ---------- */
+html, body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
-  overflow-y: auto;
-
-  /* Hide scrollbar (Chrome, Edge, Safari) */
-  scrollbar-width: none;           /* Firefox */
-  -ms-overflow-style: none;        /* IE/Edge */
-}
-
-body::-webkit-scrollbar {
-  display: none;                   /* Chrome, Safari, Edge */
-}
-
-/* Prevent scrollbar flash on page change */
-html {
-  overflow-y: auto;
   height: 100%;
+  margin: 0;
+
+  /* Prevent overscroll bounce/black gap on mobile */
+  overscroll-behavior: none;
 }
 
-#nprogress .bar {
-  background: #3b82f6; /* Tailwind blue-500 */
-  height: 4px;
-}
-
-#nprogress .peg {
-  box-shadow: 0 0 10px #3b82f6, 0 0 5px #3b82f6;
-}
-
-/* 🌟 Blue Modern Scrollbar */
+/* ---------- Scrollbar Styling ---------- */
 * {
   scrollbar-width: thin;                 /* Firefox */
   scrollbar-color: #3b82f6 #1f2937;      /* thumb | track */
@@ -61,6 +42,7 @@ html {
 
 *::-webkit-scrollbar {
   width: 8px;
+  height: 8px;
 }
 
 *::-webkit-scrollbar-track {
@@ -74,4 +56,14 @@ html {
 
 *::-webkit-scrollbar-thumb:hover {
   background-color: #60a5fa;             /* Tailwind blue-400 */
+}
+
+/* ---------- NProgress Styles ---------- */
+#nprogress .bar {
+  background: #3b82f6; /* Tailwind blue-500 */
+  height: 4px;
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px #3b82f6, 0 0 5px #3b82f6;
 }
