@@ -4,8 +4,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { ReactTyped } from "react-typed";
+import { useState } from "react";
 
 export default function Home() {
+  const [showSubtitle, setShowSubtitle] = useState(false);
+  const [showDescription, setShowDescription] = useState(false);
+
   return (
     <>
       <Navbar />
@@ -30,40 +35,62 @@ export default function Home() {
                 width={600}
                 height={600}
                 priority
-                className="rounded-full shadow-2xl border-4 border-blue-500 w-full h-auto hover:scale-115 transition-transform duration-300 object cover"
+                className="rounded-full shadow-2xl border-4 border-blue-500 w-full h-auto object-cover"
               />
             </motion.div>
 
             {/* Name */}
-            <motion.h1
+            <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.3 }}
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-3 text-blue-400"
             >
-              Femi Onasanya
-            </motion.h1>
+              <ReactTyped
+                strings={["Femi Onasanya"]}
+                typeSpeed={100}
+                showCursor={false}
+                onComplete={() => setShowSubtitle(true)} //trigger subtitle
+              />
+            </motion.div>
 
             {/* Subtitle */}
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-3 px-2"
-            >
-              Final Year Computing Student | React &amp; Node.js Developer
-            </motion.p>
+            {showSubtitle && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.6 }}
+                className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-3 px-2"
+              >
+                <ReactTyped
+                  strings={[
+                    "Final Year Computing Student | React & Node.js Developer",
+                  ]}
+                  typeSpeed={40}
+                  showCursor={false}
+                  contentType="null"
+                  onComplete={() => setShowDescription(true)} // trigger description
+                />
+              </motion.div>
+            )}
 
             {/* Description */}
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-              className="text-sm sm:text-base md:text-lg text-gray-400 max-w-xl mb-6 px-3"
-            >
-              I build fast, accessible, and responsive web apps with modern tech like React,
-              Next.js, Tailwind CSS, and MongoDB.
-            </motion.p>
+            {showDescription && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.6 }}
+                className="text-sm sm:text-base md:text-lg text-gray-400 max-w-xl mb-6 px-3"
+              >
+                <ReactTyped
+                  strings={[
+                    "I build fast, accessible, and responsive web apps with modern tech like React, Next.js, Tailwind CSS, and MongoDB.",
+                  ]}
+                  typeSpeed={30}
+                  showCursor={false}
+                />
+              </motion.div>
+            )}
 
             {/* Buttons */}
             <motion.div
@@ -86,6 +113,7 @@ export default function Home() {
                 Download CV
               </a>
             </motion.div>
+
             {/* Social Links */}
             <motion.div
               initial={{ opacity: 0 }}
