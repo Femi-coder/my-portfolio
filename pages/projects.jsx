@@ -13,7 +13,16 @@ const projects = [
     desc: 'A personal finance tracker that lets users manage their income and expenses with login support and user-specific transaction history.',
     tech: ['Next.js', 'Node.js', 'MongoDB', 'Tailwind CSS', 'bcrypt'],
     liveLink: 'https://finance-tracker-one-olive.vercel.app/',
+  },
+
+  {
+    title: 'Femi Shop (E-commerce)',
+    desc:
+      'A full-stack online store with product catalog, size/variant selection, cart, and Stripe Checkout. Orders are confirmed via Stripe webhooks and persisted in MongoDB, then displayed on a standalone success page.',
+    tech: ['Next.js', 'Node.js', 'MongoDB', 'Stripe', 'React Context', 'Custom CSS'],
+    liveLink: 'https://ecommerce1-sandy.vercel.app/'
   }
+
 ];
 
 export default function Projects() {
@@ -21,7 +30,7 @@ export default function Projects() {
     <>
       <Navbar />
       <TransitionWrapper>
-       <main className="min-h-screen overflow-auto bg-gray-900 text-gray-300 pt-24 px-4 sm:px-8 md:pl-48">
+        <main className="min-h-screen overflow-auto bg-gray-900 text-gray-300 pt-24 px-4 sm:px-8 md:pl-48">
 
           <h1 className="text-3xl sm:text-4xl font-bold mb-8 text-blue-400 text-center sm:text-left">
             Projects
